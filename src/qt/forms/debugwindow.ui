@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">background-color:#1b2234;
-color:#616b7b;
+color:#fff;
 padding:2px;</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -38,10 +38,13 @@ QTabBar::tab {
     border-radius: 5px;
     padding-left: 10px;
     margin: 10px;
+}
+QTabWidget::pane {
+position: absolute;
 }</string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="tab_info">
       <attribute name="title">
@@ -734,9 +737,9 @@ margin:5px</string>
                    <colorrole role="WindowText">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -761,18 +764,18 @@ margin:5px</string>
                    <colorrole role="Text">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
                    <colorrole role="ButtonText">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -797,9 +800,9 @@ margin:5px</string>
                    <colorrole role="WindowText">
                     <brush brushstyle="NoBrush">
                      <color alpha="128">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -808,9 +811,9 @@ margin:5px</string>
                    <colorrole role="WindowText">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -835,18 +838,18 @@ margin:5px</string>
                    <colorrole role="Text">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
                    <colorrole role="ButtonText">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -871,9 +874,9 @@ margin:5px</string>
                    <colorrole role="WindowText">
                     <brush brushstyle="NoBrush">
                      <color alpha="128">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -882,9 +885,9 @@ margin:5px</string>
                    <colorrole role="WindowText">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -909,18 +912,18 @@ margin:5px</string>
                    <colorrole role="Text">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
                    <colorrole role="ButtonText">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -945,9 +948,9 @@ margin:5px</string>
                    <colorrole role="WindowText">
                     <brush brushstyle="NoBrush">
                      <color alpha="128">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -1003,9 +1006,9 @@ margin:5px</string>
                    <colorrole role="WindowText">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -1030,18 +1033,18 @@ margin:5px</string>
                    <colorrole role="Text">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
                    <colorrole role="ButtonText">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -1066,9 +1069,9 @@ margin:5px</string>
                    <colorrole role="WindowText">
                     <brush brushstyle="NoBrush">
                      <color alpha="128">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -1077,9 +1080,9 @@ margin:5px</string>
                    <colorrole role="WindowText">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -1104,18 +1107,18 @@ margin:5px</string>
                    <colorrole role="Text">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
                    <colorrole role="ButtonText">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -1140,9 +1143,9 @@ margin:5px</string>
                    <colorrole role="WindowText">
                     <brush brushstyle="NoBrush">
                      <color alpha="128">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -1151,9 +1154,9 @@ margin:5px</string>
                    <colorrole role="WindowText">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -1178,18 +1181,18 @@ margin:5px</string>
                    <colorrole role="Text">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
                    <colorrole role="ButtonText">
                     <brush brushstyle="SolidPattern">
                      <color alpha="255">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>
@@ -1214,9 +1217,9 @@ margin:5px</string>
                    <colorrole role="WindowText">
                     <brush brushstyle="NoBrush">
                      <color alpha="128">
-                      <red>97</red>
-                      <green>107</green>
-                      <blue>123</blue>
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
                      </color>
                     </brush>
                    </colorrole>

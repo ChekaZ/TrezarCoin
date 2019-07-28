@@ -80,6 +80,9 @@
         <file alias="staking_off_menu">res/icons/staking_off_menu.png</file>
         <file alias="settings_menu">res/icons/settings_menu.png</file>
         <file alias="reddot">res/icons/reddot.png</file>
+        <file alias="openWallet">res/icons/openWallet.png</file>
+        <file alias="createWallet">res/icons/createWallet.png</file>
+        <file alias="backgroundIntro">res/icons/backgroundIntro.png</file>
     </qresource>
     <qresource prefix="/css">
         <file alias="default">res/css/default.css</file>

@@ -323,7 +323,10 @@ RES_ICONS = \
   qt/res/icons/staking_on_menu.png \
   qt/res/icons/staking_off_menu.png \
   qt/res/icons/reddot.png \
-  qt/res/icons/settings_menu.png
+  qt/res/icons/settings_menu.png \
+  qt/res/icons/createWallet.png \
+  qt/res/icons/openWallet.png \
+  qt/res/icons/backgroundIntro.png
 
  
 

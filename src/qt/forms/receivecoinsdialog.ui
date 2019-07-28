@@ -731,7 +731,7 @@ border:none;</string>
                          <number>0</number>
                         </property>
                         <item row="0" column="0">
-                         <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="7,1,1">
+                         <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="7,1">
                           <property name="spacing">
                            <number>15</number>
                           </property>
@@ -756,56 +756,7 @@ font-size:20px;
 border:0px;</string>
                                </property>
                                <property name="WindowText" stdset="0">
-                                <string>Enter Receipient's TZC Wallet Address</string>
-                               </property>
-                              </widget>
-                             </item>
-                            </layout>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QWidget" name="labelAddressBook_2" native="true">
-                            <property name="maximumSize">
-                             <size>
-                              <width>80</width>
-                              <height>80</height>
-                             </size>
-                            </property>
-                            <property name="styleSheet">
-                             <string notr="true">background:#29334b;
-color:white;
-padding:2px;
-border-radius:5px;
-height:30px;
-
-</string>
-                            </property>
-                            <layout class="QGridLayout" name="gridLayout_15">
-                             <item row="0" column="0">
-                              <widget class="QPushButton" name="labelAddressBook">
-                               <property name="sizePolicy">
-                                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                                 <horstretch>0</horstretch>
-                                 <verstretch>0</verstretch>
-                                </sizepolicy>
-                               </property>
-                               <property name="styleSheet">
-                                <string notr="true">QPushButton::pressed{
-border:0px;
-image:url(:/icons/addressbook);
-title:none;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset,
-  0px 1px 4px 0px rgba(0, 0, 0, 0.1) inset !important;
-}
-QPushButton{
-border:0px;
-image:url(:/icons/addressbook);
-title:none;
-}
-</string>
-                               </property>
-                               <property name="text">
-                                <string/>
+                                <string>Enter Address Label</string>
                                </property>
                               </widget>
                              </item>

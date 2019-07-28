@@ -702,13 +702,13 @@ height:30px;
                          <layout class="QVBoxLayout" name="verticalLayout_4">
                           <item>
                            <widget class="QValidatedLineEdit" name="payTo">
+                            <property name="toolTip">
+                             <string>Enter Receipient's TZC Wallet Address</string>
+                            </property>
                             <property name="styleSheet">
                              <string notr="true">color: #d6d5d5;
 font-size:20px;
 border:0px;</string>
-                            </property>
-                            <property name="toolTip">
-                             <string>Enter Receipient's TZC Wallet Address</string>
                             </property>
                            </widget>
                           </item>
@@ -717,6 +717,12 @@ border:0px;</string>
                        </item>
                        <item>
                         <widget class="QWidget" name="widget_9" native="true">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>0</height>
+                          </size>
+                         </property>
                          <property name="styleSheet">
                           <string notr="true">background:#29334b;
 color:white;
@@ -776,44 +782,6 @@ height:50px;
                            <number>0</number>
                           </property>
                           <item row="0" column="0">
-                           <widget class="QPushButton" name="deleteButton">
-                            <property name="styleSheet">
-                             <string notr="true">
-                                 border:0px;
-                                 title:none;
-                             </string>
-                            </property>
-                            <property name="text">
-                             <string/>
-                            </property>
-                           </widget>
-                          </item>
-                         </layout>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QWidget" name="widget_7" native="true">
-                         <property name="styleSheet">
-                          <string notr="true">background-position: center;
-outline: none;
-background:#29334b;
-color:white;
-padding:2px;
-border-radius:5px;
-height:50px;
-</string>
-                         </property>
-                         <layout class="QGridLayout" name="gridLayout_8">
-                          <property name="leftMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="topMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="bottomMargin">
-                           <number>0</number>
-                          </property>
-                          <item row="0" column="0">
                            <widget class="QPushButton" name="pasteButton">
                             <property name="styleSheet">
                              <string notr="true">QPushButton::pressed{
@@ -836,6 +804,60 @@ title:none;
                            </widget>
                           </item>
                          </layout>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QWidget" name="widget_7" native="true">
+                         <property name="minimumSize">
+                          <size>
+                           <width>50</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-position: center;
+outline: none;
+background:#29334b;
+color:white;
+padding:2px;
+border-radius:5px;
+height:50px;
+</string>
+                         </property>
+                         <widget class="QPushButton" name="deleteButton">
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>0</y>
+                            <width>51</width>
+                            <height>54</height>
+                           </rect>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QPushButton::pressed{
+background-color: #232c41;
+border:0px;
+image:url(:/icons/refresh);
+title:none;
+box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset,
+  0px 1px 4px 0px rgba(0, 0, 0, 0.1) inset !important;
+}
+QPushButton{
+border:0px;
+image:url(:/icons/refresh);
+title:none;
+}</string>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
                         </widget>
                        </item>
                       </layout>
@@ -879,6 +901,9 @@ height:30px;
                             <verstretch>0</verstretch>
                            </sizepolicy>
                           </property>
+                          <property name="toolTip">
+                           <string>Enter a Label for this Address to add it to your address book</string>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">color: #d6d5d5;
 font-size:20px;
@@ -886,9 +911,6 @@ border:0px;</string>
                           </property>
                           <property name="text">
                            <string/>
-                          </property>
-                          <property name="toolTip">
-                           <string>Enter a Label for this Address to add it to your address book</string>
                           </property>
                          </widget>
                         </item>
@@ -928,6 +950,9 @@ height:30px;
                        <layout class="QVBoxLayout" name="verticalLayout">
                         <item>
                          <widget class="QValidatedLineEdit" name="editTxComment">
+                          <property name="toolTip">
+                           <string>Enter a message up to 140 characters(Note: this information is public)</string>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">color: #d6d5d5;
 font-size:20px;
@@ -935,9 +960,6 @@ border:0px;</string>
                           </property>
                           <property name="text">
                            <string/>
-                          </property>
-                          <property name="toolTip">
-                           <string>Enter a message up to 140 characters(Note: this information is public)</string>
                           </property>
                          </widget>
                         </item>
@@ -1002,6 +1024,9 @@ border:none;</string>
                            <height>1</height>
                           </size>
                          </property>
+                         <property name="toolTip">
+                          <string>Enter a custom Change Address</string>
+                         </property>
                          <property name="styleSheet">
                           <string notr="true">background:#29334b;
 padding:2px;
@@ -1010,9 +1035,6 @@ color: #d6d5d5;
 font-size:20px;
 border:0px;
 </string>
-                         </property>
-                         <property name="toolTip">
-                          <string>Enter a custom Change Address</string>
                          </property>
                          <property name="clearButtonEnabled">
                           <bool>false</bool>

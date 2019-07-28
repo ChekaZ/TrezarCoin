@@ -24,6 +24,7 @@
 #include <QMessageBox>
 #include <QScrollBar>
 #include <QTextDocument>
+#include <QClipboard>
 
 ReceiveCoinsDialog::ReceiveCoinsDialog(const PlatformStyle *platformStyle, QWidget *parent) :
     QDialog(parent),
@@ -46,7 +47,7 @@ ReceiveCoinsDialog::ReceiveCoinsDialog(const PlatformStyle *platformStyle, QWidg
     }*/
     // UI things
 
-    ui->reqLabel->setPlaceholderText(tr("Enter Receipient's TZC Wallet Address"));
+    ui->reqLabel->setPlaceholderText(tr("Enter Address Label"));
     ui->reqMessage->setPlaceholderText(tr("Enter a message up to 140 characters"));
     // context menu actions
     QAction *copyLabelAction = new QAction(tr("Copy label"), this);
@@ -69,6 +70,9 @@ ReceiveCoinsDialog::ReceiveCoinsDialog(const PlatformStyle *platformStyle, QWidg
     connect(copyLabelAction, SIGNAL(triggered()), this, SLOT(copyLabel()));
     connect(copyMessageAction, SIGNAL(triggered()), this, SLOT(copyMessage()));
     connect(copyAmountAction, SIGNAL(triggered()), this, SLOT(copyAmount()));
+    connect(ui->btnCopyAddressAccount, SIGNAL(clicked()), this, SLOT(btn_copyClipboardClicked()));
+
+    connect(ui->labelCopyAddress, SIGNAL(clicked()), this, SLOT(on_labelCopyAddress_clicked()));
 
     connect(ui->clearButton, SIGNAL(clicked()), this, SLOT(clear()));
 }
@@ -126,6 +130,11 @@ void ReceiveCoinsDialog::clear()
 void ReceiveCoinsDialog::reject()
 {
     clear();
+}
+
+void ReceiveCoinsDialog::btn_copyClipboardClicked()
+{
+    GUIUtil::setClipboard(ui->labelAddressAccount->text());
 }
 
 void ReceiveCoinsDialog::accept()
@@ -206,6 +215,12 @@ void ReceiveCoinsDialog::recentRequestsView_selectionChanged(const QItemSelectio
     bool enable = !ui->recentRequestsView->selectionModel()->selectedRows().isEmpty();
     //ui->showRequestButton->setEnabled(enable);
     //ui->removeRequestButton->setEnabled(enable);
+}
+
+void ReceiveCoinsDialog::on_labelCopyAddress_clicked()
+{
+    // Paste text from clipboard into label field
+    ui->reqLabel->setText(QApplication::clipboard()->text());
 }
 
 // copy column of selected row to clipboard

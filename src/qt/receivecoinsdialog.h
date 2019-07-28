@@ -72,9 +72,11 @@ private Q_SLOTS:
     void recentRequestsView_selectionChanged(const QItemSelection &selected, const QItemSelection &deselected);
     void updateDisplayUnit();
     void showMenu(const QPoint &point);
+    void btn_copyClipboardClicked();
     void copyLabel();
     void copyMessage();
     void copyAmount();
+    void on_labelCopyAddress_clicked();
 };
 
 #endif // BITCOIN_QT_RECEIVECOINSDIALOG_H

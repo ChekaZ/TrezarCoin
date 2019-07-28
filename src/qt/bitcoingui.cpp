@@ -1540,8 +1540,8 @@ void BitcoinGUI::updateStakingStatus()
     }   
     else
     {
-        labelStakeMining->setPixmap(QIcon(":/icons/staking_off").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
-        toggleStakingAction->setIcon(QIcon(":/icons/staking_off"));
+        labelStakeMining->setPixmap(QIcon(":/icons/staking_off_menu").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
+        toggleStakingAction->setIcon(QIcon(":/icons/staking_off_menu"));
     }
 
     //Update NetworkInfo

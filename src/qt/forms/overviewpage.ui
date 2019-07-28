@@ -67,7 +67,7 @@
              <number>0</number>
             </property>
             <item>
-             <layout class="QHBoxLayout" name="WalletTitle" stretch="0,0,0">
+             <layout class="QHBoxLayout" name="WalletTitle" stretch="0,0,0,0">
               <property name="spacing">
                <number>0</number>
               </property>
@@ -137,6 +137,13 @@ font-size: 20px;
                  </size>
                 </property>
                </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="labelWalletStatus">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
               </item>
              </layout>
             </item>
@@ -253,28 +260,9 @@ font-size:16px;</string>
                       </spacer>
                      </item>
                      <item>
-                      <widget class="QPushButton" name="btn_refresh">
+                      <widget class="QLabel" name="labelAlerts">
                        <property name="styleSheet">
-                        <string notr="true">QPushButton::pressed{
-border:0px;
-background-image:url(:/icons/refresh);
-background-repeat:no-repeat;
-background-position: center;
-background-size:cover;
-outline: none;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset,
-  0px 1px 4px 0px rgba(0, 0, 0, 0.1) inset !important;
-}
-QPushButton{
-border:0px;
-background-image:url(:/icons/refresh);
-background-repeat:no-repeat;
-background-position: center;
-background-size:cover;
-outline: none;
-}
-
-</string>
+                        <string notr="true">color:red;</string>
                        </property>
                        <property name="text">
                         <string/>
